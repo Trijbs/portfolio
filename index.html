@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruben Space</title>
+    <title>Ruben Space | Creative Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
 
     <!-- Navigation -->
     <nav class="main-nav">
-        <div class="logo">Portfolio</div>
+        <div class="logo">RUBEN.SPACE</div>
         <div class="nav-links">
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
@@ -33,7 +33,7 @@
             <a href="#contact" class="nav-link">Contact</a>
         </div>
         <div class="nav-controls">
-            <button id="theme-toggle" aria-label="Toggle theme">
+            <button id="theme-toggle" class="btn btn-cyber-outline btn-sm" aria-label="Toggle theme">
                 <i class="fas fa-moon"></i>
             </button>
             <button id="menu-toggle" class="mobile-menu" aria-label="Toggle menu">
@@ -47,9 +47,15 @@
         <div class="hero-content">
             <h1 class="glitch" data-text="Creative Developer">Creative Developer</h1>
             <p class="typewriter">Turning ideas into interactive experiences</p>
-            <div class="cta-container">
-                <button class="cta primary">View Projects</button>
-                <button class="cta secondary">Contact Me</button>
+            <div class="btn-group cta-container">
+                <a href="#projects" class="btn btn-cyber-primary">
+                    View Projects
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-cyber-secondary">
+                    Contact Me
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
         <div class="hero-visual">
@@ -65,19 +71,23 @@
             <div class="about-card" data-tilt>
                 <div class="card-content">
                     <h3>Who I Am</h3>
-                    <p>A passionate developer creating unique digital experiences</p>
+                    <p>A passionate developer creating unique digital experiences with a focus on innovative and interactive web solutions.</p>
+                    <a href="#contact" class="btn btn-cyber-outline btn-sm">
+                        Let's Connect
+                        <i class="fas fa-handshake"></i>
+                    </a>
                 </div>
             </div>
             <div class="about-stats">
-                <div class="stat-item" data-value="5">
+                <div class="stat-item" data-value="2">
                     <span class="counter">2</span>
                     <span class="stat-label">Years Experience</span>
                 </div>
-                <div class="stat-item" data-value="50">
+                <div class="stat-item" data-value="3">
                     <span class="counter">3</span>
                     <span class="stat-label">Projects Completed</span>
                 </div>
-                <div class="stat-item" data-value="30">
+                <div class="stat-item" data-value="3">
                     <span class="counter">3</span>
                     <span class="stat-label">Happy Clients</span>
                 </div>
@@ -90,20 +100,35 @@
         <h2 class="section-title">Skills & Expertise</h2>
         <div class="skills-container">
             <div class="skill-category">
-                <h3>Frontend</h3>
+                <h3>Frontend Development</h3>
                 <div class="skill-items">
                     <div class="skill-item" data-skill="HTML5">
                         <div class="skill-progress" data-progress="90"></div>
+                        <span class="skill-name">HTML5</span>
                     </div>
                     <div class="skill-item" data-skill="CSS3">
                         <div class="skill-progress" data-progress="85"></div>
+                        <span class="skill-name">CSS3</span>
                     </div>
                     <div class="skill-item" data-skill="JavaScript">
                         <div class="skill-progress" data-progress="80"></div>
+                        <span class="skill-name">JavaScript</span>
                     </div>
                 </div>
             </div>
-            <!-- Add more skill categories -->
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item" data-skill="Node.js">
+                        <div class="skill-progress" data-progress="75"></div>
+                        <span class="skill-name">Node.js</span>
+                    </div>
+                    <div class="skill-item" data-skill="Python">
+                        <div class="skill-progress" data-progress="70"></div>
+                        <span class="skill-name">Python</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -118,15 +143,20 @@
                         <div class="project-details">
                             <h3>Project Name</h3>
                             <p>Description of the project goes here</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link">View Live</a>
-                                <a href="#" class="project-link">Source Code</a>
+                            <div class="project-links btn-group">
+                                <a href="#" class="btn btn-cyber-primary btn-sm">
+                                    View Live
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-cyber-outline btn-sm">
+                                    Source Code
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
-            <!-- Add more project cards -->
         </div>
     </section>
 
@@ -162,8 +192,8 @@
                     <label for="message">Message</label>
                     <span class="focus-border"></span>
                 </div>
-                <button type="submit" class="submit-btn">
-                    <span>Send Message</span>
+                <button type="submit" class="btn btn-cyber-primary btn-lg">
+                    Send Message
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
@@ -174,11 +204,17 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="btn btn-cyber-outline btn-sm social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="btn btn-cyber-outline btn-sm social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="btn btn-cyber-outline btn-sm social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </div>
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Ruben Space. All rights reserved.</p>
         </div>
     </footer>
 

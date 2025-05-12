@@ -1,60 +1,189 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!--                     <label>Message <textarea name="message" required></textarea></label> -->
 <head>
-	<title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio of Ruben">
-    <meta name="keywords" content="portfolio, web development, projects">
-    <meta name="author" content="Ruben">
-    <meta name="robots" content="index, follow">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/solid.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/svg-with-js.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben Space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 <body>
-	<h1>Rubens Portfolio</h1>
+    <!-- Cursor Animation -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
+    <!-- Background Elements -->
+    <div class="background-animated"></div>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
 
-    <p>Welcome to my portfolio! Here you can find a collection of my projects and skills.</p>  
-    <p>Feel free to explore and reach out if you have any questions or inquiries.</p>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="menu-toggle" class="mobile-menu" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-    <h2>About Me</h2>
-    <p>My name is Ruben and I am a web developer with a passion for creating beautiful and functional websites.</p>
-    <p>I have experience in HTML, CSS, and JavaScript, and I am always eager to learn new technologies.</p>
-    <p>In my free time, I enjoy working on personal projects and contributing to open source.</p>
-    <h2>Education</h2>
-    <p>Currently studying at Deltion college, study in Graphic Design and Web Development.</p>
-    
-    
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://trijbs.shop">Shop</a></li>
-        <li><a href="https://trijbs.eu">Website</a></li>
-        <li><a href="trijbs.html">Website</a></li>
-        <li><a href="project4.html">Project 4</a></li>
-        <li><a href="project5.html">Project 5</a></li>
-        <li><a href="project6.html">Project 6</a></li>
-         
-    </ul>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Creative Developer">Creative Developer</h1>
+            <p class="typewriter">Turning ideas into interactive experiences</p>
+            <div class="cta-container">
+                <button class="cta primary">View Projects</button>
+                <button class="cta secondary">Contact Me</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="geometric-background"></div>
+            <div class="animated-sphere"></div>
+        </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: rbdegroot@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/trijbs">trijbs</a></p>
-    <p>Instagram: <a href="https://instagram.com/trijbs.xyz">trijbs</a></p>
-</body> 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-card" data-tilt>
+                <div class="card-content">
+                    <h3>Who I Am</h3>
+                    <p>A passionate developer creating unique digital experiences</p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item" data-value="5">
+                    <span class="counter">2</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item" data-value="50">
+                    <span class="counter">3</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item" data-value="30">
+                    <span class="counter">3</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-items">
+                    <div class="skill-item" data-skill="HTML5">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <div class="skill-item" data-skill="CSS3">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more skill categories -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-details">
+                            <h3>Project Name</h3>
+                            <p>Description of the project goes here</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Live</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Add more project cards -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>support@trijbs.xyz</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Hoogeveen, Netherlands</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
